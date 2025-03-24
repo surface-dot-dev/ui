@@ -1,0 +1,22 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "module": "ES2015",
+    "target": "ESNext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "stripInternal": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "jsx": "react-jsx"
+  }
+}
