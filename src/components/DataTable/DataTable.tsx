@@ -17,7 +17,7 @@ export type DataTableProps = {
   context?: string;
 };
 
-const ctx = 'a table of data';
+const ctx = 'table of data';
 
 export const DataTable = ({
   columns,
