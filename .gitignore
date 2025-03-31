@@ -9,3 +9,6 @@ typings/
 tsbuildinfo
 .npm
 bin/
+index.html
+src/dev/
+public/
