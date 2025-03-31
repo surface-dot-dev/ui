@@ -1,9 +1,7 @@
 export type ViewProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export const View = ({ children }: ViewProps) => {
-  return (
-    <div>{children}</div>
-  );
+  return <div>{children}</div>;
 };
