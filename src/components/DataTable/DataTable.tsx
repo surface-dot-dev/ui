@@ -9,11 +9,43 @@ import {
 } from './types';
 
 export type DataTableProps = {
+  /**
+   * Array of column definitions that specify the structure and properties
+   * of each column in the data table
+   */
   columns: DataTableColumnType[];
+  
+  /**
+   * Array of data rows containing the actual content to be displayed
+   * in the table's body
+   */
   rows: DataTableRowType[];
+
+  /**
+   * Number of leftmost columns to keep fixed in position while scrolling
+   * horizontally. These columns will remain visible at all times.
+   */
   numFixedColumns?: number;
+
+  /**
+   * Custom render function for header cells. Allows for customization
+   * of how header cells are displayed in the table.
+   * @param props - Header cell properties including column information
+   * @returns React node to be rendered in the header cell
+   */
   renderHeaderCell?: (props: DataTableHeaderCellType) => React.ReactNode;
+
+  /**
+   * Custom render function for data cells. Allows for customization
+   * of how data cells are displayed in the table.
+   * @param props - Data cell properties including row and column information
+   * @returns React node to be rendered in the data cell
+   */
   renderDataCell?: (props: DataTableDataCellType) => React.ReactNode;
+
+  /**
+   * What the data table represents contextutally within the application.
+   */
   context?: string;
 };
 
