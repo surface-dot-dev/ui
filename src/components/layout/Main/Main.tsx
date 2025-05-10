@@ -1,6 +1,6 @@
 export type MainProps = {
   /**
-   * Child components to render within the Main container. 
+   * Child components to render within the Main container.
    */
   children?: React.ReactNode;
 };

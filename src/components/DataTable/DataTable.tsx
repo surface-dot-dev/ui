@@ -14,7 +14,7 @@ export type DataTableProps = {
    * of each column in the data table
    */
   columns: DataTableColumnType[];
-  
+
   /**
    * Array of data rows containing the actual content to be displayed
    * in the table's body
